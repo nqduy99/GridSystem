@@ -1,7 +1,5 @@
 * {
     box-sizing: border-box;
-}
-body {
     margin: 0;
     padding: 0;
 }
@@ -11,7 +9,34 @@ body {
     font-size: 40px;
     color: #fff;
     text-align: center;
-    min-height: 380px;
-    line-height: 380px;
+    min-height: 180px;
+    line-height: 180px;
     background-color: orange;
+}
+
+.main {
+    display: flex; 
+    margin: 0 32px;
+}
+
+.sidebar {
+    width: 300px; 
+    background-color: aquamarine;
+}
+
+.content {
+    flex-grow: 1;
+    background-color: antiquewhite;
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hide-on-tablet {
+        display: none;
+    }
+}
+
+@media (max-width: 739px) {
+    .hide-on-mobile {
+        display: none;
+    }
 }
